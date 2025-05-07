@@ -42,7 +42,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/users', {
+      const response = await fetch('https://backend-v9b5.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
