@@ -16,7 +16,7 @@ function App() {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch('http://localhost:5000/api/users');
+      const response = await fetch('https://backend-v9b5.onrender.com');
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
