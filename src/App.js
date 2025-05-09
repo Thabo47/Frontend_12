@@ -16,7 +16,7 @@ function App() {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch('https://backend-v9b5.onrender.com');
+      const response = await fetch('https://backend-12-1.onrender.com/api/users');
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -42,7 +42,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://backend-v9b5.onrender.com', {
+      const response = await fetch('https://backend-v9b5.onrender.com/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
